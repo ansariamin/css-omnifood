@@ -1,14 +1,4 @@
 /*
------01 typography system
-font size
-10 12 14 16 18 ...
-
-space system
-2 4 6 8 10 12 ...
-
-
-line height 
-default 1
 
 https://unsplash.com/
 
@@ -21,6 +11,12 @@ https://coolors.co/
 
 https://heroicons.com/
 https://ionic.io/ionicons
+------------------------
+font size
+10 12 14 16 18 ...
+
+space system
+2 4 6 8 10 12 ...
 
 
 
@@ -49,7 +45,6 @@ shadow
 
 
 border radias
-
 
 
 */
@@ -301,6 +296,9 @@ section how
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 /* .section-how div div {
@@ -715,7 +713,11 @@ feature
 section-cta
 ********************************/
 .section-cta {
-  padding: 9.6rem 0;
+  /* top right bottom lef*/
+  /* padding: 9.6rem 0 12.8rem 0; */
+
+  /*top horizental left */
+  padding: 4.8rem 0 12.8rem;
 }
 .cta-text-box {
   color: #45260a;
@@ -808,4 +810,77 @@ section-cta
    */
 
   box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+/******************************
+footer
+********************************/
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+.address-col {
+}
+.nav-col {
+}
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+.copyright {
+  font-size: 1.4rem;
+  color: #767676;
+  line-height: 1.6;
+  margin-top: auto;
+}
+.footer-heading {
+}
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+.nav-col {
+}
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.social-link {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+.footer-link:visited,
+.footer-link:link {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.address {
+  margin-bottom: 2.4rem;
+}
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
 }
